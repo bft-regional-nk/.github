@@ -1,6 +1,6 @@
 # AI社員システム 司令塔
 
-> **タモさん**がゼロ少佐たちに指示を出す組織です。
+> **管理者**がゼロ少佐たちに指示を出す組織です。
 
 ## 指示の出し方
 
@@ -12,7 +12,7 @@ GitHub Issues に type:project または role:xxx ラベルを付けて作成す
 
 ```mermaid
 graph TD
-    User("👤 タモさん")
+    User("👤 管理者")
 
     subgraph GitHub["🏢 bft-regional-nk/00_claudecode"]
         Boss["⚔️ ザ・ボス<br/>インシデント検知<br/><i>毎時自動監視</i>"]
