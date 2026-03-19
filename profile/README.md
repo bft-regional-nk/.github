@@ -15,6 +15,7 @@ graph TD
     User("👤 タモさん")
 
     subgraph GitHub["🏢 bft-regional-nk/00_claudecode"]
+        Boss["⚔️ ザ・ボス<br/>インシデント検知<br/><i>毎時自動監視</i>"]
         PM["🎯 ゼロ少佐<br/>PMエージェント<br/><i>type:project を分解</i>"]
         Dev["🔫 ネイキッドスネーク<br/>開発エンジニア<br/><i>role:dev</i>"]
         DevOps["🔧 オセロット<br/>DevOps<br/><i>role:devops</i>"]
@@ -34,12 +35,16 @@ graph TD
     Dev -->|"PR作成→レビュー依頼"| QA
     Docs -->|"PR作成→レビュー依頼"| QA
     QA -->|"承認→自動マージ"| GitHub
+
+    Boss -->|"異常検知→報告"| PM
+    PM -->|"対応指示"| Boss
 ```
 
 ## エージェント一覧
 
-| キャラ | 役割 | 起動ラベル |
+| キャラ | 役割 | 起動条件 |
 |---|---|---|
+| ⚔️ **ザ・ボス** | インシデント検知・ゼロ少佐へ報告 | 毎時自動（schedule） |
 | 🎯 **ゼロ少佐** | プロジェクト分解・指揮 | `type:project` |
 | 🔫 **ネイキッドスネーク** | コード実装 | `role:dev` |
 | 🔧 **オセロット** | インフラ・DevOps | `role:devops` |
