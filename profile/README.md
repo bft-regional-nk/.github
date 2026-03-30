@@ -12,7 +12,7 @@ Linear の アクティブ Cycle に Issue を作成して Todo に置く。あ�
 
 ```mermaid
 graph TD
-    User("koyanagi<br/>指揮官")
+    User("指揮官")
 
     subgraph Linear["Linear (Issue Tracking)"]
         Issue["Issue<br/>Todo / Approved"]
@@ -78,7 +78,7 @@ graph TD
 
 ```
 Todo → In Progress → Plan Review（荒巻プラン + 少佐レビュー）
-  → Approved（koyanagi 承認）
+  → Approved（指揮官 承認）
   → In Progress → 実装（タチコマ等）→ コードレビュー（サイトー）
   → Done（サイトー承認）or Fix Required（修正依頼）
 ```
