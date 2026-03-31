@@ -124,3 +124,11 @@ Todo → In Progress → Plan Review（荒巻プラン + 少佐レビュー）
 - **Runtime**: WSL2 (Ubuntu)
 - **IaC**: AWS CDK (TypeScript)
 - **CI/CD**: GitHub Actions
+
+## 稼働仕様
+
+| 項目 | 内容 |
+|---|---|
+| 実行方式 | WSL2 バックグラウンド起動（PC起動時に自動開始） |
+| 稼働時間 | 5:00〜22:00（自動処理） |
+| 夜間動作 | 22:00以降、対応中Issueがなければ自動シャットダウン |
